@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="I8S-dT-361">
+                                <rect key="frame" x="22" y="20" width="558" height="29"/>
+                                <segments>
+                                    <segment title="Cars"/>
+                                    <segment title="Trucks"/>
+                                </segments>
+                                <connections>
+                                    <action selector="toggleCarOrTruck:" destination="BYZ-38-t0r" eventType="valueChanged" id="dUd-iH-cU5"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yod-f8-zN4">
+                                <rect key="frame" x="22" y="448" width="558" height="30"/>
+                                <state key="normal" title="Corvette"/>
+                                <connections>
+                                    <action selector="selectCorvette:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uwj-jj-VH8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orW-XN-7rW">
+                                <rect key="frame" x="20" y="486" width="560" height="30"/>
+                                <state key="normal" title="Camaro"/>
+                                <connections>
+                                    <action selector="camaroButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iyR-dI-61t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MU9-Mu-IES">
+                                <rect key="frame" x="22" y="524" width="558" height="30"/>
+                                <state key="normal" title="Impala"/>
+                                <connections>
+                                    <action selector="selectImpala:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DO3-Wq-9Iw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ym2-6K-bNz">
+                                <rect key="frame" x="22" y="82" width="558" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="onB-h7-cS0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcn-Td-oPp">
+                                <rect key="frame" x="22" y="127" width="558" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="gXc-0q-Jh7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxh-TI-cYf">
+                                <rect key="frame" x="22" y="177" width="558" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="NDk-z5-YoF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fd1-Jm-SFj">
+                                <rect key="frame" x="22" y="448" width="558" height="30"/>
+                                <state key="normal" title="Suburban"/>
+                                <connections>
+                                    <action selector="selectSuburban:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WIP-Pb-yRR"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JG2-xO-LL9">
+                                <rect key="frame" x="22" y="486" width="558" height="30"/>
+                                <state key="normal" title="Silverado"/>
+                                <connections>
+                                    <action selector="selectSilverado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aGO-E8-N7b"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="528-yA-F73">
+                                <rect key="frame" x="22" y="524" width="558" height="30"/>
+                                <state key="normal" title="Tahoe"/>
+                                <connections>
+                                    <action selector="selectTahoe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HfT-C0-wsP"/>
+                                </connections>
+                            </button>
+                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DOv-DA-7Nu">
+                                <rect key="frame" x="105" y="206" width="391" height="209"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="391" id="8DJ-5D-hda"/>
+                                    <constraint firstAttribute="height" constant="209" id="KPv-H9-7Va"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MU9-Mu-IES" firstAttribute="baseline" secondItem="528-yA-F73" secondAttribute="baseline" id="1X1-eS-bOL"/>
+                            <constraint firstItem="Fd1-Jm-SFj" firstAttribute="top" secondItem="DOv-DA-7Nu" secondAttribute="bottom" constant="33" id="4mc-a5-Ynm"/>
+                            <constraint firstItem="Ym2-6K-bNz" firstAttribute="top" secondItem="I8S-dT-361" secondAttribute="bottom" constant="34" id="59A-LX-6aW"/>
+                            <constraint firstItem="mcn-Td-oPp" firstAttribute="top" secondItem="Ym2-6K-bNz" secondAttribute="bottom" constant="24" id="7PU-AN-0ho"/>
+                            <constraint firstItem="qxh-TI-cYf" firstAttribute="centerX" secondItem="DOv-DA-7Nu" secondAttribute="centerX" id="9ak-xJ-5rd"/>
+                            <constraint firstItem="I8S-dT-361" firstAttribute="trailing" secondItem="Ym2-6K-bNz" secondAttribute="trailing" id="A8b-hG-hnf"/>
+                            <constraint firstItem="orW-XN-7rW" firstAttribute="trailing" secondItem="528-yA-F73" secondAttribute="trailing" id="AUH-c1-4Lt"/>
+                            <constraint firstItem="Fd1-Jm-SFj" firstAttribute="leading" secondItem="JG2-xO-LL9" secondAttribute="leading" id="DZx-OG-vUF"/>
+                            <constraint firstItem="Ym2-6K-bNz" firstAttribute="trailing" secondItem="mcn-Td-oPp" secondAttribute="trailing" id="HHc-V7-xAD"/>
+                            <constraint firstItem="orW-XN-7rW" firstAttribute="baseline" secondItem="JG2-xO-LL9" secondAttribute="baseline" id="HmK-nL-91D"/>
+                            <constraint firstItem="MU9-Mu-IES" firstAttribute="top" secondItem="JG2-xO-LL9" secondAttribute="bottom" constant="8" symbolic="YES" id="K6z-nO-YKS"/>
+                            <constraint firstItem="DOv-DA-7Nu" firstAttribute="centerX" secondItem="orW-XN-7rW" secondAttribute="centerX" id="KoO-GA-szP"/>
+                            <constraint firstItem="orW-XN-7rW" firstAttribute="top" secondItem="Yod-f8-zN4" secondAttribute="bottom" constant="8" symbolic="YES" id="N6D-1B-Mpy"/>
+                            <constraint firstItem="orW-XN-7rW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NGj-D7-UuO"/>
+                            <constraint firstItem="Fd1-Jm-SFj" firstAttribute="baseline" secondItem="Yod-f8-zN4" secondAttribute="baseline" id="RZ4-14-87K"/>
+                            <constraint firstItem="I8S-dT-361" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="RyZ-Ho-ntT"/>
+                            <constraint firstItem="I8S-dT-361" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="S2v-Wm-KH9"/>
+                            <constraint firstItem="mcn-Td-oPp" firstAttribute="leading" secondItem="qxh-TI-cYf" secondAttribute="leading" id="U3l-pI-wj3"/>
+                            <constraint firstItem="qxh-TI-cYf" firstAttribute="trailing" secondItem="Fd1-Jm-SFj" secondAttribute="trailing" id="URE-1i-dc1"/>
+                            <constraint firstItem="JG2-xO-LL9" firstAttribute="trailing" secondItem="orW-XN-7rW" secondAttribute="trailing" id="Xg7-CZ-pa1"/>
+                            <constraint firstItem="mcn-Td-oPp" firstAttribute="trailing" secondItem="qxh-TI-cYf" secondAttribute="trailing" id="aFt-1o-Jk8"/>
+                            <constraint firstItem="Yod-f8-zN4" firstAttribute="leading" secondItem="Fd1-Jm-SFj" secondAttribute="leading" id="dvS-SM-GIb"/>
+                            <constraint firstItem="528-yA-F73" firstAttribute="trailing" secondItem="MU9-Mu-IES" secondAttribute="trailing" id="ita-oy-UY4"/>
+                            <constraint firstItem="I8S-dT-361" firstAttribute="leading" secondItem="Ym2-6K-bNz" secondAttribute="leading" id="ksP-8E-mZi"/>
+                            <constraint firstItem="qxh-TI-cYf" firstAttribute="leading" secondItem="Yod-f8-zN4" secondAttribute="leading" id="m3C-lf-Shp"/>
+                            <constraint firstItem="JG2-xO-LL9" firstAttribute="leading" secondItem="MU9-Mu-IES" secondAttribute="leading" id="mNR-i8-A1R"/>
+                            <constraint firstItem="DOv-DA-7Nu" firstAttribute="top" secondItem="qxh-TI-cYf" secondAttribute="bottom" constant="8" symbolic="YES" id="oH7-id-pfk"/>
+                            <constraint firstItem="qxh-TI-cYf" firstAttribute="top" secondItem="mcn-Td-oPp" secondAttribute="bottom" constant="29" id="rwM-cN-Ayd"/>
+                            <constraint firstItem="Yod-f8-zN4" firstAttribute="trailing" secondItem="JG2-xO-LL9" secondAttribute="trailing" id="sqh-JL-iXy"/>
+                            <constraint firstItem="Ym2-6K-bNz" firstAttribute="leading" secondItem="mcn-Td-oPp" secondAttribute="leading" id="tm0-rl-7Ai"/>
+                            <constraint firstItem="MU9-Mu-IES" firstAttribute="leading" secondItem="528-yA-F73" secondAttribute="leading" id="vCW-tY-Jn8"/>
+                            <constraint firstItem="Yod-f8-zN4" firstAttribute="trailing" secondItem="Fd1-Jm-SFj" secondAttribute="trailing" id="wfm-l0-24A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="camaroButton" destination="orW-XN-7rW" id="PrC-O3-UKJ"/>
+                        <outlet property="corvetteButton" destination="Yod-f8-zN4" id="NeC-4K-sqc"/>
+                        <outlet property="imageView" destination="DOv-DA-7Nu" id="sHE-gY-5Q9"/>
+                        <outlet property="impalaButton" destination="MU9-Mu-IES" id="KN5-rR-RbM"/>
+                        <outlet property="makeLabel" destination="mcn-Td-oPp" id="zxJ-rr-fs8"/>
+                        <outlet property="modelLabel" destination="Ym2-6K-bNz" id="Oiv-5a-F9j"/>
+                        <outlet property="mpgLabel" destination="qxh-TI-cYf" id="AKf-RN-NBs"/>
+                        <outlet property="silveradoButton" destination="JG2-xO-LL9" id="VUs-8L-45L"/>
+                        <outlet property="suburbanButton" destination="Fd1-Jm-SFj" id="4Th-T5-aKc"/>
+                        <outlet property="tahoeButton" destination="528-yA-F73" id="m8U-NS-A9U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="387"/>
+        </scene>
+    </scenes>
+</document>
